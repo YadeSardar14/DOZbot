@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoooZ</title>
+
+    <link rel="stylesheet" href="../static/Dooz.css">
+
+
+</head>
+
+
+<body>
+
+    <form class="panel1">
+
+        <br>
+        <br>
+        <br>
+        <button class="select" id="1p" type="button" onclick="hid_show(this.parentElement,document.getElementsByClassName('panel2')[0])">Only Player</button>
+        <br>
+        <button class="select" id="2p" type="button" onclick="hid_show(this.parentElement,document.getElementsByClassName('dooz_page')[0])">Tow Player</button>
+        <br>
+    </form>
+
+
+
+    <form class="panel2">
+        <h1>Who starts?</h1>
+        <br>
+        <button class="select" id="me" type="button" onclick="hid_show(this.parentElement,document.getElementsByClassName('dooz_page')[0])">ME</button>
+        <br>
+        <button class="select" id="ai" type="button" onclick="hid_show(this.parentElement,document.getElementsByClassName('dooz_page')[0])">AI</button>
+        <br>
+    </form>
+
+
+    <form class="dooz_page">
+        
+        
+
+        <button class="home" id="0" type="button" onclick="dooz_handlear(this)"></button>
+        <button class="home" id="1" type="button" onclick="dooz_handlear(this)"></button>
+        <button class="home" id="2" type="button" onclick="dooz_handlear(this)"></button>
+        <br>
+        <button class="home" id="3" type="button" onclick="dooz_handlear(this)"></button>
+        <button class="home" id="4" type="button" onclick="dooz_handlear(this)"></button>
+        <button class="home" id="5" type="button" onclick="dooz_handlear(this)"></button>
+        <br>
+        <button class="home" id="6" type="button" onclick="dooz_handlear(this)"></button>
+        <button class="home" id="7" type="button" onclick="dooz_handlear(this)"></button>
+        <button class="home" id="8" type="button" onclick="dooz_handlear(this)"></button>
+
+
+        <br>
+        <p id="show"></p>
+        <br>
+        <button class="select" id="new" type="button" onclick="hid_show(this.parentElement,document.getElementsByClassName('panel1')[0]); claer_bord()"> New Game</button>
+
+
+    </form>
+
+
+</body>
+
+
+<script src="../static/Dooz.js"></script>
+
+</html>
